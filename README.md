@@ -1,8 +1,19 @@
-## 🔹 How It Works
+# Nailcut Reminder App
 
-Never forget your nail day again! 🩵
-1. **Add a Reminder** – Set your nail-cutting date & time.
-2. **Jot Notes** – Keep track of extra details.
-3. **Set Repeat** – Weekly, monthly, or one-off.
-4. **Get Notified** – Pop-up alerts keep you on track.
-5. **Manage Reminders** – Update or delete anytime; all saved locally.
+A simple React + Vite reminder app that helps you remember to cut your nails — with notifications, local storage, and repeat options.
+
+## 🚀 How to Run Locally
+```
+npm install
+npm run dev
+```
+
+Visit `http://localhost:5173`
+
+## 🌍 Deploy for Free
+Use [Vercel](https://vercel.com) or [Netlify](https://netlify.com). Both are free forever.
+
+- **Build command:** `npm run build`
+- **Output directory:** `dist`
+
+Enjoy!
