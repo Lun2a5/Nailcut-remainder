@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nailcut Reminder</title>
+  <style>
+    /* Pastel aesthetic styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #d6f0ff, #fff0d6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 50px 20px;
+      margin: 0;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ff6f91;
+    }
+
+    input, button {
+      padding: 12px 20px;
+      margin: 10px 5px;
+      border-radius: 12px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input {
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background-color: #a0e7e5;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    button:hover {
+      background-color: #b4f8c8;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      width: 300px;
+    }
+
+    li {
+      background: #ffd6e8;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 12px;
+      font-size: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li button {
+      background: #ffadad;
+      color: #fff;
+      border-radius: 8px;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      margin: 0;
+    }
+
+    li button:hover {
+      background: #ff7f7f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nailcut Reminder</h1>
+  <input type="text" id="reminderInput" placeholder="Enter your reminder">
+  <button onclick="addReminder()">Add Reminder</button>
+
+  <ul id="reminderList"></ul>
+
+  <script>
+    function addReminder() {
+      const input = document.getElementById('reminderInput');
+      const value = input.value.trim();
+      if (!value) return;
+
+      const li = document.createElement('li');
+      li.textContent = value;
+
+      // Add delete button
+      const delBtn = document.createElement('button');
+      delBtn.textContent = 'Delete';
+      delBtn.onclick = () => li.remove();
+      li.appendChild(delBtn);
+
+      document.getElementById('reminderList').appendChild(li);
+      input.value = '';
+    }
+  </script>
+</body>
+</html>
