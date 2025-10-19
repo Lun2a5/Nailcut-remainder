@@ -1,7 +1,8 @@
 ## 🔹 How It Works
 
-1. **Set a Reminder** – Add a title and pick a date & time for your nail-cutting schedule.
-2. **Add Notes** – Include optional notes to keep track of details.
-3. **Choose Repeat** – Weekly, monthly, or one-time.
-4. **Get Alerts** – When it’s time, a notification pops up on your screen.
-5. **Manage Easily** – Delete or update reminders anytime; they’re saved locally.
+Never forget your nail day again! 🩵
+1. **Add a Reminder** – Set your nail-cutting date & time.
+2. **Jot Notes** – Keep track of extra details.
+3. **Set Repeat** – Weekly, monthly, or one-off.
+4. **Get Notified** – Pop-up alerts keep you on track.
+5. **Manage Reminders** – Update or delete anytime; all saved locally.
